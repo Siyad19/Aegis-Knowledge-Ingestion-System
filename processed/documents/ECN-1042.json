@@ -1,0 +1,15 @@
+{
+  "document_id": "ECN-1042",
+  "filename": "ECN-1042.pdf",
+  "file_type": ".pdf",
+  "relative_path": "engineering_bulletins\\ECN-1042.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "Engineering Change Notice\nECN-1042\nECN-1042  |  Page 1\nEngineering Change Notice\nECN-1042\nECN Number:\nECN-1042\nTitle:\nPressure Sensor Replacement (PS-04 → PS-04A) and Operating Pressure Update\nEffective:\nSoftware Revision 3.2\nAffected Assembly:\nHydraulic Power Unit (HPU)\nStatus:\nReleased\n1. Description of Change\nEffective software revision 3.2, pressure sensor PS-04 is replaced by pressure sensor PS-04A at the HPU\ndischarge line. PS-04A uses an updated signal conditioning circuit and is not a form-fit-function replacement for\nPS-04; controller firmware must be at revision 3.2 or later to read PS-04A correctly.\nAlongside the sensor change, the normal HPU discharge pressure setpoint is revised from 180 bar to 200 bar.\nThis is a deliberate process change, not a sensor calibration artifact: the higher setpoint improves press cycle\ntime on Series-7 units manufactured after 2024.\nPS-04 remains installed and supported on units running software revisions prior to 3.2. Do not install PS-04A on\na controller running firmware older than 3.2.\n2. Reason for Change\nField data showed PS-04's signal drift exceeded tolerance after approximately 18 months of continuous service\nin high-cycle installations, occasionally triggering nuisance Alarm A19 (Sensor Signal Invalid). PS-04A corrects\nthis drift behavior.\n3. Impacted Documentation\nOperator Manual AEG-OM-700, Maintenance Manual AEG-MM-700, and Component Register AEG-CR-700\nhave been updated to reflect PS-04A and the 200 bar setpoint. See also ECN-1058 for a related alarm\nthreshold correction.",
+      "extraction_method": "text"
+    }
+  ]
+}

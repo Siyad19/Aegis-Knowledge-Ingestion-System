@@ -1,0 +1,15 @@
+{
+  "document_id": "screen_01_home",
+  "filename": "screen_01_home.png",
+  "file_type": ".png",
+  "relative_path": "screenshots\\screen_01_home.png",
+  "content": [
+    {
+      "location": {
+        "file": "screen_01_home.png"
+      },
+      "text": "AEGIS SERIES-7 HCS — HOME SW REV 3.2\n\nHPU DISCHARGE PRESSURE STARTUP INTERLOCKS\n\nIV-21 (Isolation Valve) OPEN\nRESET\n\n200 bar Emergency Stop ciosep\n\nMaintenance Panel\n\nan NORMAL\nSTATUS: RUNNING — NORMAL Hydraulic Fluid Level\nACTIVE COMPONENT SUMMARY\nHP unit PLC-03 controlled EOIN\nPS-04A discharge pressure sensor ls\nI-21 isolation valve OPEN“\n\nTouch ALARMS for active/historical alarm list. Touch DIAGNOSTICS for sensor-level detail",
+      "extraction_method": "ocr"
+    }
+  ]
+}

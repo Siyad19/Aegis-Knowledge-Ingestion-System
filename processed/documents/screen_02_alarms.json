@@ -1,0 +1,15 @@
+{
+  "document_id": "screen_02_alarms",
+  "filename": "screen_02_alarms.png",
+  "file_type": ".png",
+  "relative_path": "screenshots\\screen_02_alarms.png",
+  "content": [
+    {
+      "location": {
+        "file": "screen_02_alarms.png"
+      },
+      "text": "AEGIS SERIES-7 HCS — ALARM LIST\n\nSW REV 3.2\n\nAlarm A17 active for 00:00:14 — Shutdown Procedure 4.7 threshold: 00:00:10\n\n# TAG DESCRIPTION STATE TIME\n\n1 Al7 Hydraulic Pressure Low CLEARED 08:14:02\n\n2 Ald Pressure Sensor Signal Invalid CLEARED 03-11 22:40\n3 Al7 Hydraulic Pressure Low ACTIVE 08:14:57\n\n4 Al8 Hydraulic Pressure High INACTIVE —",
+      "extraction_method": "ocr"
+    }
+  ]
+}

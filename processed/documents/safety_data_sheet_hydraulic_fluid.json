@@ -1,0 +1,22 @@
+{
+  "document_id": "safety_data_sheet_hydraulic_fluid",
+  "filename": "safety_data_sheet_hydraulic_fluid.pdf",
+  "file_type": ".pdf",
+  "relative_path": "noise\\safety_data_sheet_hydraulic_fluid.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "Safety Data Sheet — HydroFluid-32\nHF32-SDS-06\nHF32-SDS-06  |  Page 1\nSafety Data Sheet\nAegis HydroFluid-32 Hydraulic Fluid\nSDS Number: HF32-SDS-06   |   Revision Date: 2025-02-11\n1. Identification\nProduct Name: Aegis HydroFluid-32. Recommended Use: hydraulic fluid for Aegis Series-7 Hydraulic Power\nUnits and compatible industrial hydraulic systems. Not for use as a brake fluid or in food-grade applications.\n2. Hazard Identification\nClassification: Not classified as hazardous under GHS for acute toxicity. May cause mild skin irritation with\nprolonged contact. Slip hazard if spilled on hard flooring.\n3. Composition / Information on Ingredients\nBase oil (petroleum, highly refined), 80-95%. Proprietary anti-wear and anti-oxidant additive package, 5-15%.\nExact composition withheld as a trade secret.\n4. First-Aid Measures\nSkin contact: wash with soap and water. Eye contact: flush with water for 15 minutes. Ingestion: do not induce\nvomiting; seek medical attention.\n5. Fire-Fighting Measures\nSuitable extinguishing media: CO2, dry chemical, foam. Flash point (Cleveland Open Cup): approximately\n210°C.\n6. Accidental Release Measures\nContain spill, absorb with inert material, dispose per local regulations. Avoid release to waterways.\n7. Handling and Storage\nStore in a cool, dry, well-ventilated area away from oxidizing agents. Keep container closed when not in use.\n8. Exposure Controls / Personal Protection\nUse in well-ventilated areas. Nitrile gloves and safety glasses recommended for extended handling.\n9. Physical and Chemical Properties\nAppearance: clear amber liquid. Viscosity: ISO VG 32. Pour point: -33°C.",
+      "extraction_method": "text"
+    },
+    {
+      "location": {
+        "page": 2
+      },
+      "text": "Safety Data Sheet — HydroFluid-32\nHF32-SDS-06\nHF32-SDS-06  |  Page 2\n10. Stability and Reactivity\nStable under normal conditions. Avoid contact with strong oxidizers.\n11. Toxicological Information\nLow acute toxicity via oral, dermal, and inhalation routes based on component data.\n15. Regulatory Information\nNot listed as a hazardous substance under applicable regional regulations at the time of publication.\n16. Other Information\nThis SDS covers the hydraulic fluid product only and does not describe the operation, maintenance, alarms, or\nelectronic control behavior of any equipment the fluid is used in. Refer to the relevant equipment manufacturer's\ndocumentation for equipment operating procedures.",
+      "extraction_method": "text"
+    }
+  ]
+}

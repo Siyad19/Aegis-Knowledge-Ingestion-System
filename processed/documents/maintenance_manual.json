@@ -1,0 +1,15 @@
+{
+  "document_id": "maintenance_manual",
+  "filename": "maintenance_manual.pdf",
+  "file_type": ".pdf",
+  "relative_path": "manuals\\maintenance_manual.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "Aegis Series-7 HCS — Maintenance Manual\nAEG-MM-700 Rev 3\nAEG-MM-700 Rev 3  |  Page 1\nAegis Series-7 Hydraulic Control System\nMaintenance Manual\nDocument AEG-MM-700   |   Revision 3\n1. Scope\nThis manual covers scheduled maintenance, alarm response, and controller behavior for the Aegis Series-7\nHydraulic Control System (HCS). It supplements, and does not replace, the Operator Manual (AEG-OM-700).\n3. Controller Reset Conditions\nDo NOT reset the PLC-03 controller while hydraulic pressure is above 50 bar. The controller reset routine\nre-initializes valve driver outputs; if the circuit is still pressurized, this can produce a momentary uncommanded\nactuation of Isolation Valve IV-21.\nController reset is only permitted when pressure, as reported by the active pressure sensor (PS-04 on revisions\nprior to 3.2, PS-04A on revision 3.2 and later), reads below 50 bar.\n4. Alarm A17 Response\nAlarm A17 (Hydraulic Pressure Low) may clear on its own within a few seconds if it was triggered by a transient\npressure dip during valve transition. If alarm A17 persists for more than 10 seconds, execute Shutdown\nProcedure 4.7 before investigating further. Do not attempt to clear a persistent A17 by silencing the alarm\nalone.\nShutdown Procedure 4.7: close IV-21, confirm pressure decay, set POWER selector to OFF, tag out per site\nlockout/tagout procedure, then proceed to Section 6 (Troubleshooting).\n6. Troubleshooting: Low Discharge Pressure\nIf the HPU fails to reach normal operating pressure, check the following in order:\n•\nIsolation valve IV-21 is closed or partially closed.\n•\nHydraulic fluid level is low.\n•\nPressure sensor (PS-04 / PS-04A) signal is invalid or out of calibration — see Alarm A19 in the Alarm\nReference.\n7. Component Access\nThe Hydraulic Power Pack (HPU) maintenance access panel is secured by four quarter-turn fasteners. Remove\nthe panel only after the unit has been shut down per Section 4 and pressure has been bled per Section 8. Do\nnot operate the unit with the panel removed.\n9. Related Documents\nEngineering Change Notice ECN-1042 (pressure sensor replacement and setpoint change), ECN-1058 (alarm\nthreshold correction), and the Component Register (AEG-CR-700) should be consulted alongside this manual,\nas component identifiers and setpoints have changed across software revisions.",
+      "extraction_method": "text"
+    }
+  ]
+}

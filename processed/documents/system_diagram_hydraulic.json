@@ -1,0 +1,15 @@
+{
+  "document_id": "system_diagram_hydraulic",
+  "filename": "system_diagram_hydraulic.pdf",
+  "file_type": ".pdf",
+  "relative_path": "diagrams\\system_diagram_hydraulic.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "Aegis Series-7 HCS — Hydraulic Schematic (AEG-DWG-H01)\nComponent connectivity is shown graphically. Refer to Component Register AEG-CR-700 for identifiers.\nPLC-03\n(HCS Controller)\nHydraulic Power Unit\n(HPU)\nPS-04A\nIV-21\nMain Reservoir\nPress Circuit\nAuxiliary\nReservoir\n— purple lines: control/signal connections to PLC-03\n— grey lines: hydraulic fluid path\n— tan line: reservoir interconnect",
+      "extraction_method": "text"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "document_id": "system_diagram_electrical",
+  "filename": "system_diagram_electrical.png",
+  "file_type": ".png",
+  "relative_path": "diagrams\\system_diagram_electrical.png",
+  "content": [
+    {
+      "location": {
+        "file": "system_diagram_electrical.png"
+      },
+      "text": "Aegis Series-7 HCS — Electrical Schematic (AEG-DWG-E02)\n\nPower distribution and interlock wiring\n\nMAIN DISCONNECT\nql\n\n[|\n\nCONTROL XFMR\nT1 480:120V\n\nPLC-03 24VDC\nPOWER SUPPLY\n\nPLC-03 1/0 RACK\n\nE-STOP SAFETY\nRELAY KA1\n\nSENSOR LOOP\nPOWER 24VDC\n\nIV-21 VALVE\nDRIVER\n\nfeeds pressure transducer\nloop (see wiring diagram\nAEG-DWG-W03)",
+      "extraction_method": "ocr"
+    }
+  ]
+}

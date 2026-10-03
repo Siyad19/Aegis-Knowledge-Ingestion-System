@@ -1,0 +1,15 @@
+{
+  "document_id": "screen_03_diagnostics",
+  "filename": "screen_03_diagnostics.png",
+  "file_type": ".png",
+  "relative_path": "screenshots\\screen_03_diagnostics.png",
+  "content": [
+    {
+      "location": {
+        "file": "screen_03_diagnostics.png"
+      },
+      "text": "AEGIS SERIES-7 HCS — DIAGNOSTICS SW REV 3.2\n\nSENSOR DIAGNOSTICS\n\nTag P.S.04-A\nSignal Type <=eX0 Tees\nRaw Reading SD\n\n200.3 bar\n\nScaled Value\n\nCalibration Status WITHIN TOLERANCE\n\nLast Calibrated 2026-01-09\n\nFirmware Rev. S2n0\n\nNote: this screen displays the sensor tag as printed on the physical unit label.",
+      "extraction_method": "ocr"
+    }
+  ]
+}

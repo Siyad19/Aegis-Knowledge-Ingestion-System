@@ -1,0 +1,116 @@
+{
+  "document_id": "terminology_glossary",
+  "filename": "terminology_glossary.docx",
+  "file_type": ".docx",
+  "relative_path": "reference\\terminology_glossary.docx",
+  "content": [
+    {
+      "location": {
+        "paragraph": 1
+      },
+      "text": "Aegis Series-7 HCS — Terminology Glossary",
+      "extraction_method": "text"
+    },
+    {
+      "location": {
+        "paragraph": 2
+      },
+      "text": "Document AEG-GL-700  |  Revision 2  |  Maintained by Technical Documentation",
+      "extraction_method": "text"
+    },
+    {
+      "location": {
+        "paragraph": 4
+      },
+      "text": "This glossary lists officially defined terms used across Aegis Series-7 documentation. It is maintained separately from individual manuals and is not guaranteed to be updated at the same time as new Engineering Change Notices. Terms not listed here may still appear in other documents — absence from this glossary does not mean a term is invalid.",
+      "extraction_method": "text"
+    },
+    {
+      "location": {
+        "paragraph": 7
+      },
+      "text": "Note: this revision of the glossary does not yet include an entry for “HP unit” (used informally in the Operator Manual and training materials) or for the superseded sensor “PS-04”. Readers should not assume a term's absence here means it refers to something different from a listed term — cross-check against the Component Register.",
+      "extraction_method": "text"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 1
+      },
+      "text": "Term | Definition",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 2
+      },
+      "text": "Hydraulic Power Unit (HPU) | The assembly that generates and regulates hydraulic pressure for the press circuit. See also: Hydraulic Unit.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 3
+      },
+      "text": "Hydraulic Unit | Informal short form of Hydraulic Power Unit, used interchangeably in some maintenance documentation.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 4
+      },
+      "text": "Isolation Valve (IV-21) | The valve isolating the HPU from the downstream press circuit. Must be open before HPU startup.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 5
+      },
+      "text": "PLC-03 | The HCS Controller; supervises startup sequencing, alarm evaluation, and interlocks.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 6
+      },
+      "text": "Pressure Sensor 04A (PS-04A) | The HPU discharge pressure transducer used on software revision 3.2 and later.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 7
+      },
+      "text": "Alarm | A system-generated notification indicating an out-of-tolerance or fault condition. See the Alarm Reference for the current alarm list.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 8
+      },
+      "text": "Setpoint | A configured target value (e.g. normal operating pressure) against which a live measurement is compared.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 9
+      },
+      "text": "Engineering Change Notice (ECN) | A controlled document describing an approved change to equipment, software, or documentation.",
+      "extraction_method": "table"
+    },
+    {
+      "location": {
+        "table": 1,
+        "row": 10
+      },
+      "text": "Software Revision | The version identifier for HCS controller firmware, e.g. 3.2. Governs which components and setpoints are applicable.",
+      "extraction_method": "table"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "document_id": "wiring_diagram",
+  "filename": "wiring_diagram.pdf",
+  "file_type": ".pdf",
+  "relative_path": "diagrams\\wiring_diagram.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "Aegis Series-7 HCS — Instrumentation Wiring Diagram (AEG-DWG-W03)\nTerminal block and connector references are local to this drawing.\nPLC-03\nTerminal Block\nTB-7\nConnector\nJ-14\nConnector\nJ-15\nPRESSURE XDCR\n(field device)\nIV-21 SOLENOID\nNote: the field device wired at Connector J-14 / Terminal Block TB-7 is the HPU\ndischarge pressure transducer described elsewhere as PS-04A (see Component\nRegister AEG-CR-700). This drawing uses the wiring designation only and does\nnot repeat the AEG-CR-700 component ID.",
+      "extraction_method": "text"
+    }
+  ]
+}

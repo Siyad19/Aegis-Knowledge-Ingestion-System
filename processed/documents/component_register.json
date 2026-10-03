@@ -1,0 +1,112 @@
+{
+  "document_id": "component_register",
+  "filename": "component_register.xlsx",
+  "file_type": ".xlsx",
+  "relative_path": "reference\\component_register.xlsx",
+  "content": [
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 1
+      },
+      "text": "Component ID (as printed) | Common Name | Known Aliases | Location | Status | Notes",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 2
+      },
+      "text": "HPU | Hydraulic Power Unit | Hydraulic Unit; HP unit; Hydraulic Power Pack | Skid A, Bay 2 | Active | Primary hydraulic pressure source for the press circuit.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 3
+      },
+      "text": "IV-21 | Isolation Valve 21 | Isolation Valve; IV21 | Hydraulic Module | Active | Must be OPEN prior to HPU startup.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 4
+      },
+      "text": "PS-04 | Pressure Sensor 04 | PRESSURE SENSOR 04; P04; PS04 | HPU discharge line | Superseded | Superseded by PS-04A effective software rev 3.2. See ECN-1042.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 5
+      },
+      "text": "PS-04A | Pressure Sensor 04A | P04A; PS04A | HPU discharge line | Active | Installed per ECN-1042. Requires controller firmware >= 3.2.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 6
+      },
+      "text": "PS-40 | Pressure Sensor 40 | P40; PS40 | Coolant Loop, Skid B | Active | NOT related to the HPU discharge circuit. Do not confuse with PS-04 / PS-04A.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 7
+      },
+      "text": "PLC-03 | HCS Controller | Controller; Aegis Controller | Control Cabinet 1 | Active | Supervises startup sequencing, alarms, and interlocks.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 8
+      },
+      "text": "A17 | Alarm: Hydraulic Pressure Low | — | N/A (software alarm) | Active | See Alarm Reference AEG-AL-700 for thresholds and required actions.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 9
+      },
+      "text": "A18 | Alarm: Hydraulic Pressure High | — | N/A (software alarm) | Active | See Alarm Reference AEG-AL-700.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 10
+      },
+      "text": "A19 | Alarm: Pressure Sensor Signal Invalid | — | N/A (software alarm) | Active | See Alarm Reference AEG-AL-700.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 11
+      },
+      "text": "TB-7 | Terminal Block 7 | — | Control Cabinet 1 | Active | Wiring reference only, used in AEG-DWG-W03; corresponds to the PS-04A signal loop.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 12
+      },
+      "text": "Q1 | Main Disconnect | — | Control Cabinet 1 | Active | 480V incoming disconnect.",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Components",
+        "row": 13
+      },
+      "text": "T1 | Control Transformer | — | Control Cabinet 1 | Active | 480:120V control power.",
+      "extraction_method": "spreadsheet"
+    }
+  ]
+}

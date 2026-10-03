@@ -1,0 +1,80 @@
+{
+  "document_id": "training_slide_excerpt",
+  "filename": "training_slide_excerpt.pptx",
+  "file_type": ".pptx",
+  "relative_path": "extra\\training_slide_excerpt.pptx",
+  "content": [
+    {
+      "location": {
+        "slide": 1,
+        "shape": 1
+      },
+      "text": "Aegis Series-7 HCS",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 1,
+        "shape": 2
+      },
+      "text": "New Operator Orientation — Hydraulic Power Unit Basics",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 1,
+        "shape": 3
+      },
+      "text": "Training Excerpt — Slides 4–6 of the full deck",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 2,
+        "shape": 1
+      },
+      "text": "What is the HPU?",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 2,
+        "shape": 2
+      },
+      "text": "The Hydraulic Power Unit is the heart of the press's hydraulic system.\nYou'll sometimes hear techs call it the \"hydraulic pack\" or just \"the unit\" — same thing.\nIt pulls fluid from the main reservoir and, on most Line 4/5 configurations, tops up from a smaller Auxiliary Reservoir during peak demand.\nDischarge pressure is what the controller watches to decide if the unit is running normally.",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 2,
+        "shape": 3
+      },
+      "text": "Note: “Auxiliary Reservoir” is a Line 4/5-specific configuration detail and is not covered in the standard Operator Manual.",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 3,
+        "shape": 1
+      },
+      "text": "Before You Press Start",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 3,
+        "shape": 3
+      },
+      "text": "These four checks match the startup interlocks shown on the HOME screen of the HMI.",
+      "extraction_method": "pptx"
+    },
+    {
+      "location": {
+        "slide": 3,
+        "shape": 4
+      },
+      "text": "Full startup and shutdown procedures are in the Operator Manual (AEG-OM-700) — this slide is a quick memory aid only, not a replacement procedure.",
+      "extraction_method": "pptx"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "document_id": "configuration_export",
+  "filename": "configuration_export.json",
+  "file_type": ".json",
+  "relative_path": "configuration\\configuration_export.json",
+  "content": [
+    {
+      "location": {
+        "json_path": "$.export_metadata.system"
+      },
+      "text": "Aegis Series-7 HCS",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.export_metadata.controller_id"
+      },
+      "text": "PLC-03",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.export_metadata.firmware_version"
+      },
+      "text": "3.2.1",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.export_metadata.export_timestamp"
+      },
+      "text": "2026-02-03T09:14:22Z",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.export_metadata.export_tool"
+      },
+      "text": "AegisConfigExport v1.4",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.startup_interlocks.valve_iv21_required_state"
+      },
+      "text": "OPEN",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.startup_interlocks.estop_required_state"
+      },
+      "text": "RESET",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.startup_interlocks.maintenance_panel_required_state"
+      },
+      "text": "CLOSED",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.startup_interlocks.fluid_level_required_band"
+      },
+      "text": "NORMAL",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.sensors.sensor_ps04a_threshold_bar"
+      },
+      "text": "200",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.sensors.sensor_ps04a_alarm_low_bar"
+      },
+      "text": "150",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.sensors.sensor_ps04a_alarm_high_bar"
+      },
+      "text": "220",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.sensors.sensor_ps04a_signal_type"
+      },
+      "text": "4-20mA",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.sensors.sensor_ps40_zone"
+      },
+      "text": "coolant_loop",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.sensors.sensor_ps40_note"
+      },
+      "text": "unrelated to HPU discharge circuit; do not map to sensor_ps04a_* keys",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.alarms.A17.description"
+      },
+      "text": "hydraulic_pressure_low",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.alarms.A17.persistence_before_shutdown_seconds"
+      },
+      "text": "10",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.alarms.A17.shutdown_procedure_ref"
+      },
+      "text": "4.7",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.alarms.A18.description"
+      },
+      "text": "hydraulic_pressure_high",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.alarms.A18.persistence_before_shutdown_seconds"
+      },
+      "text": "None",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.alarms.A19.description"
+      },
+      "text": "pressure_sensor_signal_invalid",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.alarms.A19.persistence_before_shutdown_seconds"
+      },
+      "text": "None",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.controller_reset.min_pressure_bar_required_for_reset"
+      },
+      "text": "None",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.controller_reset.max_pressure_bar_allowed_for_reset"
+      },
+      "text": "50",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.controller_reset.note"
+      },
+      "text": "reset is blocked in firmware above max_pressure_bar_allowed_for_reset",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.revision_applicability.sensor_ps04a_threshold_bar.applies_from_firmware"
+      },
+      "text": "3.2",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.revision_applicability.sensor_ps04_legacy_threshold_bar.value"
+      },
+      "text": "180",
+      "extraction_method": "json"
+    },
+    {
+      "location": {
+        "json_path": "$.revision_applicability.sensor_ps04_legacy_threshold_bar.applies_before_firmware"
+      },
+      "text": "3.2",
+      "extraction_method": "json"
+    }
+  ]
+}

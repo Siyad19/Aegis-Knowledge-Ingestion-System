@@ -1,0 +1,15 @@
+{
+  "document_id": "scanned_appendix_calibration",
+  "filename": "scanned_appendix_calibration.pdf",
+  "file_type": ".pdf",
+  "relative_path": "scans\\scanned_appendix_calibration.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "APPENDIX C — SENSOR CALIBRATION RECORD\n\nAegis Series-7 HCS (scanned from field service binder, uncontrolled copy)\n\nSensor Tag: PS-04A\nLocation: HPU discharge line\nCalibration Date: 2026-01-09\nTechnician: R. Okafor\n\nCalibration Points\n\nPoint Reference Reading Result\nZero (0%) 0 bar 0.1 bar PASS\nMid (50%) 100 bar 99.6 bar PASS\nSpan (100%) 200 bar 199.4 bar PASS\n\nNote: this calibration record supersedes the field data sheet used prior to the\nPS-04 to PS-04A sensor change (see ECN-1042). Span reference target is 200 bar,\nconsistent with the software revision 3.2 operating pressure setpoint.\n\nPrior sensor (PS-04) span reference target was 180 bar — for historical\ncomparison only. Do not use the 180 bar figure to evaluate PS-04A.\n\nNo calibration interval is specified for PS-04A on this form; recalibration\nfrequency should be confirmed against the applicable maintenance schedule,\nwhich is not included in this binder.\n\nSignature: Date:\n\nPage 1 of 1 — scanned copy, quality varies",
+      "extraction_method": "ocr"
+    }
+  ]
+}

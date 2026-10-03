@@ -1,0 +1,22 @@
+{
+  "document_id": "alarm_reference",
+  "filename": "alarm_reference.pdf",
+  "file_type": ".pdf",
+  "relative_path": "reference\\alarm_reference.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "Aegis Series-7 HCS — Alarm Reference\nAEG-AL-700 Rev 5\nAEG-AL-700 Rev 5  |  Page 1\nAegis Series-7 Hydraulic Control System\nAlarm Reference\nDocument AEG-AL-700   |   Revision 5 (incorporates ECN-1058)\nAlarm\nCondition\nPanel\nIndication\nPossible Cause(s)\nRequired Action\nA17\nHydraulic pressure\nbelow 150 bar\nRED\n1. IV-21 closed or\npartially closed\n2. Low hydraulic fluid\n3. Pressure sensor\nsignal invalid\nSee Section 4 of the\nMaintenance Manual.\nIf persistent > 10 s,\nrun Shutdown Proc. 4.7*\nA18\nHydraulic pressure\nabove 220 bar\nAMBER\n1. Relief valve fault\n2. Setpoint\nmisconfiguration\nStop the HPU. Do not\nrestart until pressure\nrelief is verified.\nA19\nPressure sensor\nsignal invalid\nRED\n1. Sensor wiring fault\n2. Sensor drift beyond\ntolerance (see ECN-1042)\nReplace sensor per\nMaintenance Manual\nSection 6.\n* Shutdown Procedure 4.7 applies only when A17 persists beyond 10 seconds. A transient A17 that clears on its own during normal valve\ntransition does not require Procedure 4.7 (see Maintenance Manual AEG-MM-700, Section 4).\nNote on sensor references: prior to Revision 5 of this document, the condition for A17 referenced sensor PS-04\nby name. Per ECN-1058, the condition is evaluated against whichever pressure sensor is active for the installed\nsoftware revision (PS-04 or PS-04A). The 150 bar and 220 bar thresholds shown above are unchanged by\nECN-1058.",
+      "extraction_method": "text"
+    },
+    {
+      "location": {
+        "page": 2
+      },
+      "text": "Aegis Series-7 HCS — Alarm Reference\nAEG-AL-700 Rev 5\nAEG-AL-700 Rev 5  |  Page 2\nContinued: Alarm Reference (AEG-AL-700)\nAlarms A01–A16 and A20–A34 (electrical, lubrication, and communications alarms) are documented in the\ncompanion Electrical Alarm Reference, AEG-AL-701, which is not part of this package.",
+      "extraction_method": "text"
+    }
+  ]
+}

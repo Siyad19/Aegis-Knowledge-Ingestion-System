@@ -1,0 +1,160 @@
+{
+  "document_id": "legacy_manual_v1",
+  "filename": "legacy_manual_v1.html",
+  "file_type": ".html",
+  "relative_path": "manuals\\legacy_manual_v1.html",
+  "content": [
+    {
+      "location": {
+        "element": 1,
+        "tag": "h1"
+      },
+      "text": "Aegis Series-7 Hydraulic Control System — Operator Manual",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 2,
+        "tag": "p"
+      },
+      "text": "Document AEG-OM-700, Revision 1 (superseded). Applies to software revisions 3.0 and 3.1 only.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 3,
+        "tag": "h2"
+      },
+      "text": "1. Overview",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 4,
+        "tag": "p"
+      },
+      "text": "The Aegis Series-7 Hydraulic Control System provides closed-loop hydraulic pressure regulation\nfor industrial press lines. The system is built around the Hydraulic Power Pack, which supplies\npressurized fluid to the press circuit under the supervision of the Aegis Controller.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 5,
+        "tag": "h2"
+      },
+      "text": "2. Key Components",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 6,
+        "tag": "table"
+      },
+      "text": "Reference Component Function Hydraulic Power Pack Hydraulic Power Pack (HPU) Generates and regulates hydraulic pressure IV-21 Isolation Valve 21 Isolates the HPU from the press circuit PS-04 Pressure Sensor 04 Reports HPU discharge pressure to the controller",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 7,
+        "tag": "h2"
+      },
+      "text": "4. Starting the Hydraulic Power Pack",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 8,
+        "tag": "p"
+      },
+      "text": "Before starting, verify:",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 9,
+        "tag": "li"
+      },
+      "text": "Hydraulic fluid level is within the normal band.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 10,
+        "tag": "li"
+      },
+      "text": "Isolation valve IV-21 is open.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 11,
+        "tag": "li"
+      },
+      "text": "Emergency stop is reset.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 12,
+        "tag": "li"
+      },
+      "text": "Turn the POWER selector to ON.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 13,
+        "tag": "li"
+      },
+      "text": "Press START.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 14,
+        "tag": "li"
+      },
+      "text": "Verify pressure reaches 180 bar .",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 15,
+        "tag": "h2"
+      },
+      "text": "5. Normal Operating Ranges",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 16,
+        "tag": "p"
+      },
+      "text": "Normal HPU discharge pressure is 180 bar, as measured by pressure sensor PS-04.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 17,
+        "tag": "h2"
+      },
+      "text": "6. Alarms",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 18,
+        "tag": "p"
+      },
+      "text": "See the Aegis Alarm Reference for alarm A17 (Hydraulic Pressure Low) and related codes.",
+      "extraction_method": "html"
+    },
+    {
+      "location": {
+        "element": 19,
+        "tag": "p"
+      },
+      "text": "This legacy export does not reflect ECN-1042 (PS-04 to PS-04A sensor change and pressure setpoint\nupdate to 200 bar, effective software revision 3.2) or ECN-1058. Do not use this document as the\nsole reference for units running software revision 3.2 or later.",
+      "extraction_method": "html"
+    }
+  ]
+}

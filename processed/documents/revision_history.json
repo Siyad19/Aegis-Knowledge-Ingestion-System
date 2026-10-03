@@ -1,0 +1,56 @@
+{
+  "document_id": "revision_history",
+  "filename": "revision_history.xlsx",
+  "file_type": ".xlsx",
+  "relative_path": "reference\\revision_history.xlsx",
+  "content": [
+    {
+      "location": {
+        "sheet": "Revision History",
+        "row": 1
+      },
+      "text": "Software Revision | Release Date | Summary of Changes | Related Documents",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Revision History",
+        "row": 2
+      },
+      "text": "3.0 | 2023-06-02 | Initial Series-7 release. | AEG-OM-700 Rev 1, AEG-MM-700 Rev 1",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Revision History",
+        "row": 3
+      },
+      "text": "3.1 | 2024-02-14 | Minor HMI diagnostics screen updates. No change to sensors or setpoints. | AEG-OM-700 Rev 2",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Revision History",
+        "row": 4
+      },
+      "text": "3.2 | 2025-09-30 | Pressure sensor PS-04 replaced by PS-04A. Normal HPU discharge pressure setpoint changed from 180 bar to 200 bar. See ECN-1042. | ECN-1042, AEG-OM-700 Rev 3, AEG-MM-700 Rev 2, AEG-CR-700 Rev 2",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Revision History",
+        "row": 5
+      },
+      "text": "3.2.1 | 2025-11-18 | Documentation correction: Alarm A17 condition text no longer names a specific sensor (PS-04 or PS-04A) so it reads correctly on units at either revision. Alarm thresholds unchanged. See ECN-1058. | ECN-1058, AEG-AL-700 Rev 5",
+      "extraction_method": "spreadsheet"
+    },
+    {
+      "location": {
+        "sheet": "Revision History",
+        "row": 6
+      },
+      "text": "3.3 | 2026-04-07 (planned) | Scheduled: extended diagnostics logging. No sensor or setpoint changes currently planned. | Not yet published",
+      "extraction_method": "spreadsheet"
+    }
+  ]
+}

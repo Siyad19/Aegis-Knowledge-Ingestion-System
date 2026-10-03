@@ -1,0 +1,22 @@
+{
+  "document_id": "operator_manual",
+  "filename": "operator_manual.pdf",
+  "file_type": ".pdf",
+  "relative_path": "manuals\\operator_manual.pdf",
+  "content": [
+    {
+      "location": {
+        "page": 1
+      },
+      "text": "Aegis Series-7 HCS — Operator Manual\nAEG-OM-700 Rev 4\nAEG-OM-700 Rev 4  |  Page 1\nAegis Series-7 Hydraulic Control System\nOperator Manual\nDocument AEG-OM-700   |   Revision 4   |   Applies to software revision 3.2 and later\n1. Overview\nThe Aegis Series-7 Hydraulic Control System (HCS) provides closed-loop hydraulic pressure regulation for\nindustrial press lines. The system is built around the Hydraulic Power Unit (HPU), which supplies pressurized\nfluid to the press circuit under the supervision of the HCS Controller (PLC-03).\nThroughout Aegis documentation the Hydraulic Power Unit may also be referred to as the Hydraulic Unit or\nthe HP unit, depending on which department produced the document. All three terms refer to the same\nphysical assembly.\n2. Key Components\nReference\nComponent\nFunction\nHPU\nHydraulic Power Unit\nGenerates and regulates hydraulic pressure\nIV-21\nIsolation Valve 21\nIsolates the HPU from the press circuit\nPS-04A\nPressure Sensor 04A\nReports HPU discharge pressure to PLC-03\nPLC-03\nHCS Controller\nSupervises startup, monitoring, and alarms\nNote: earlier Aegis units shipped with pressure sensor PS-04. As of software revision 3.2, PS-04 is superseded by PS-04A; see\nEngineering Change Notice ECN-1042 for details.\n4. Operating Procedures\n4.3 Starting the Hydraulic Power Unit\nBefore starting, verify:\n•\nHydraulic fluid level is within the normal band on the sight glass.\n•\nIsolation valve IV-21 is OPEN.\n•\nThe emergency stop circuit is RESET.\nWARNING: Do not start the Hydraulic Power Unit with the maintenance access panel removed. Rotating\ncomponents inside the HPU housing are exposed when the panel is off.\nStartup sequence:\n1\nTurn the POWER selector to ON.\n2\nPress START.\n3\nVerify discharge pressure, as reported by PS-04A, reaches 200 bar. This is the normal operating pressure\nfor software revision 3.2 and later; see ECN-1042 for the pressure change history.\n5. Normal Operating Ranges\nNormal HPU discharge pressure is 200 bar on software revision 3.2 and later. On revisions prior to 3.2, normal\ndischarge pressure was 180 bar, measured by the original PS-04 sensor. Do not compare live readings against",
+      "extraction_method": "text"
+    },
+    {
+      "location": {
+        "page": 2
+      },
+      "text": "Aegis Series-7 HCS — Operator Manual\nAEG-OM-700 Rev 4\nAEG-OM-700 Rev 4  |  Page 2\nthe 180 bar figure on a unit running revision 3.2 or later — the setpoint changed along with the sensor\nreplacement.\n6. Alarms\nSee the Aegis Alarm Reference (AEG-AL-700) for the full alarm list, including alarm A17 (Hydraulic Pressure\nLow), its possible causes, and required operator actions.\n7. Controller Reset\nDo not reset the PLC-03 controller while hydraulic pressure is above 50 bar. Resetting the controller under\npressure can cause an uncommanded valve transition. Bleed pressure below 50 bar first, using the manual\nbleed procedure in Section 8, before performing a controller reset.",
+      "extraction_method": "text"
+    }
+  ]
+}

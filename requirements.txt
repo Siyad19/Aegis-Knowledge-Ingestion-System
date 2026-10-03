@@ -1,0 +1,38 @@
+# PDF processing
+PyMuPDF>=1.26
+
+# OCR for scanned PDFs and images
+pytesseract
+Pillow
+
+# DOCX processing
+python-docx
+
+# XLSX processing
+openpyxl
+
+# HTML processing
+beautifulsoup4
+
+# PPTX processing
+python-pptx
+
+# Environment variables
+python-dotenv
+
+# LLM / OpenAI-compatible API
+openai
+
+# LangChain
+langchain
+langchain-groq
+langchain-core
+langchain-text-splitters
+langchain-openai
+
+# Vector search / embeddings
+faiss-cpu
+sentence-transformers
+
+# Web application
+streamlit
