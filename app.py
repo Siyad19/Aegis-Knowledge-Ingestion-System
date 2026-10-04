@@ -1,4 +1,5 @@
 import streamlit as st
+import json
 
 from src.answering.answer_question import answer_question
 
@@ -35,7 +36,10 @@ st.caption(
 
 question = st.text_input(
     "Enter your question",
-    placeholder="e.g. Which document introduced the change from PS-04 to PS-04A?"
+    placeholder=(
+        "e.g. Which document introduced the change "
+        "from PS-04 to PS-04A?"
+    )
 )
 
 
@@ -63,6 +67,21 @@ if st.button("Ask", type="primary"):
                     question
                 )
 
+                # Convert JSON string to Python dictionary
+                # if answer_question() returns JSON text.
+                if isinstance(result, str):
+
+                    result = json.loads(result)
+
+            except json.JSONDecodeError:
+
+                st.error(
+                    "The answer returned by the AI "
+                    "was not valid JSON."
+                )
+
+                st.stop()
+
             except Exception as e:
 
                 st.error(
@@ -78,12 +97,12 @@ if st.button("Ask", type="primary"):
 
         st.subheader("Answer")
 
-        st.write(
-            result.get(
-                "answer",
-                "No answer available."
-            )
+        answer = result.get(
+            "answer",
+            "No answer available."
         )
+
+        st.write(answer)
 
 
         # ====================================================
@@ -96,7 +115,7 @@ if st.button("Ask", type="primary"):
         )
 
         with st.expander(
-            "Evidence",
+            "Supporting Evidence",
             expanded=True
         ):
 
@@ -106,14 +125,29 @@ if st.button("Ask", type="primary"):
 
                     if isinstance(item, dict):
 
-                        st.markdown(
-                            f"**{item.get('statement', '')}**"
+                        statement = item.get(
+                            "statement",
+                            ""
                         )
 
+                        filename = item.get(
+                            "filename",
+                            "Unknown"
+                        )
+
+                        location = item.get(
+                            "location",
+                            "Unknown"
+                        )
+
+                        if statement:
+
+                            st.markdown(
+                                f"**{statement}**"
+                            )
+
                         st.caption(
-                            f"Source: "
-                            f"{item.get('filename', 'Unknown')} — "
-                            f"{item.get('location', 'Unknown')}"
+                            f"Source: {filename} — {location}"
                         )
 
                     else:
@@ -141,15 +175,23 @@ if st.button("Ask", type="primary"):
         if conflicts:
 
             with st.expander(
-                "⚠️ Conflicts",
+                "Conflicts",
                 expanded=True
             ):
 
                 for item in conflicts:
 
-                    st.markdown(
-                        f"- {item}"
-                    )
+                    if isinstance(item, dict):
+
+                        st.markdown(
+                            f"- {item}"
+                        )
+
+                    else:
+
+                        st.markdown(
+                            f"- {item}"
+                        )
 
 
         # ====================================================
@@ -164,15 +206,23 @@ if st.button("Ask", type="primary"):
         if uncertainty:
 
             with st.expander(
-                "❓ Uncertainty",
+                "Uncertainty",
                 expanded=True
             ):
 
                 for item in uncertainty:
 
-                    st.markdown(
-                        f"- {item}"
-                    )
+                    if isinstance(item, dict):
+
+                        st.markdown(
+                            f"- {item}"
+                        )
+
+                    else:
+
+                        st.markdown(
+                            f"- {item}"
+                        )
 
 
         # ====================================================
@@ -187,14 +237,68 @@ if st.button("Ask", type="primary"):
         if gaps:
 
             with st.expander(
-                "🔎 Information Gaps",
+                "Information Gaps",
                 expanded=True
             ):
 
-                for item in gaps:
+                # Handle a single dictionary
+                if isinstance(gaps, dict):
 
-                    st.markdown(
-                        f"- {item}"
+                    question_text = gaps.get(
+                        "question",
+                        ""
                     )
 
+                    reason = gaps.get(
+                        "reason",
+                        ""
+                    )
 
+                    if question_text:
+
+                        st.markdown(
+                            f"**Question:** {question_text}"
+                        )
+
+                    if reason:
+
+                        st.markdown(
+                            f"**Reason:** {reason}"
+                        )
+
+                # Handle a list of gaps
+                else:
+
+                    for item in gaps:
+
+                        if isinstance(item, dict):
+
+                            question_text = item.get(
+                                "question",
+                                ""
+                            )
+
+                            reason = item.get(
+                                "reason",
+                                ""
+                            )
+
+                            if question_text:
+
+                                st.markdown(
+                                    f"**Question:** "
+                                    f"{question_text}"
+                                )
+
+                            if reason:
+
+                                st.markdown(
+                                    f"**Reason:** "
+                                    f"{reason}"
+                                )
+
+                        else:
+
+                            st.markdown(
+                                f"- {item}"
+                            )

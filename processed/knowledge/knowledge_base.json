@@ -5279,6 +5279,23 @@
       }
     },
     {
+      "subject": "P.S.04-A",
+      "predicate": "sensor_id_displayed",
+      "value": "P.S.04-A",
+      "conditions": [
+        "Diagnostics SW Rev 3.2"
+      ],
+      "scope": "AEGIS SERIES-7 HCS",
+      "source_text": "Tag P.S.04-A. Note: this screen displays the sensor tag as printed on the physical unit label.",
+      "provenance": {
+        "document_id": "screen_03_diagnostics",
+        "filename": "screen_03_diagnostics.png",
+        "location": {
+          "file": "screen_03_diagnostics.png"
+        }
+      }
+    },
+    {
       "subject": "Line 4 HP unit",
       "predicate": "low_pressure_light_status",
       "value": "occasionally on",
@@ -5740,7 +5757,23 @@
           "shape": 3
         }
       }
+    },
+    {
+    "subject": "IV-21",
+    "predicate": "location",
+    "value": "Hydraulic Module",
+    "conditions": [],
+    "scope": "Aegis HCS",
+    "source_text": "IV-21 | Isolation Valve 21 | Isolation Valve; IV21 | Hydraulic Module | Active | Must be OPEN prior to HPU startup.",
+    "provenance": {
+      "document_id": "component_register",
+      "filename": "component_register.xlsx",
+      "location": {
+        "sheet": "Components",
+        "row": 3
+      }
     }
+  }
   ],
   "requirements": [
     {
@@ -6463,6 +6496,22 @@
       }
     },
     {
+      "source": "P.S.04-A",
+      "relationship": "matches_component",
+      "target": "PS-04A",
+      "conditions": [
+        "Diagnostics SW Rev 3.2"
+      ],
+      "source_text": "The diagnostics screen displays the sensor tag as P.S.04-A. This corresponds to the known component PS-04A.",
+      "provenance": {
+        "document_id": "screen_03_diagnostics",
+        "filename": "screen_03_diagnostics.png",
+        "location": {
+          "file": "screen_03_diagnostics.png"
+        }
+      }
+    },
+    {
       "source": "T1",
       "relationship": "located_in",
       "target": "Control Cabinet 1",
@@ -6895,7 +6944,49 @@
           "page": 1
         }
       }
+    },
+    {
+    "source": "PLC-03",
+    "relationship": "connects_to",
+    "target": "PS-04A",
+    "conditions": [],
+    "source_text": "Hydraulic schematic shows PLC-03 (HCS Controller) connected directly to PS-04A.",
+    "provenance": {
+      "document_id": "system_diagram_hydraulic",
+      "filename": "system_diagram_hydraulic.pdf",
+      "location": {
+        "page": 1
+      }
     }
+  },
+  {
+    "source": "PLC-03",
+    "relationship": "connects_to",
+    "target": "HPU",
+    "conditions": [],
+    "source_text": "Hydraulic schematic shows PLC-03 (HCS Controller) connected directly to HPU.",
+    "provenance": {
+      "document_id": "system_diagram_hydraulic",
+      "filename": "system_diagram_hydraulic.pdf",
+      "location": {
+        "page": 1
+      }
+    }
+  },
+  {
+    "source": "PLC-03",
+    "relationship": "connects_to",
+    "target": "IV-21",
+    "conditions": [],
+    "source_text": "Hydraulic schematic shows PLC-03 (HCS Controller) connected directly to IV-21.",
+    "provenance": {
+      "document_id": "system_diagram_hydraulic",
+      "filename": "system_diagram_hydraulic.pdf",
+      "location": {
+        "page": 1
+      }
+    }
+  }
   ],
   "warnings": [
     {

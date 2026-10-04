@@ -2,7 +2,7 @@
   {
     "question_id": "Q1",
     "question": "What must be true before starting the Hydraulic Power Unit?",
-    "system_answer": "Before starting the Hydraulic Power Unit, the following conditions must be true: the emergency stop circuit is RESET, isolation valve IV‑21 is OPEN, and the hydraulic fluid level is within the normal band on the sight glass.",
+    "system_answer": "Before starting the Hydraulic Power Unit, the following must be true: the emergency stop circuit is RESET; isolation valve IV-21 is OPEN; hydraulic fluid level is within the normal band on the sight glass.",
     "evidence": [
       {
         "statement": "Before starting, verify: The emergency stop circuit is RESET.",
@@ -23,7 +23,7 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 0.93,
+    "latency_seconds": 2.18,
     "error": null
   },
   {
@@ -50,7 +50,7 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 0.77,
+    "latency_seconds": 1.21,
     "error": null
   },
   {
@@ -61,9 +61,7 @@
       {
         "statement": "Alarm A17 (Hydraulic Pressure Low) may clear on its own within a few seconds if it was triggered by a transient pressure dip during valve transition.",
         "filename": "maintenance_manual.pdf",
-        "location": {
-          "page": 1
-        }
+        "location": "page 1"
       },
       {
         "statement": "Alarm A17 | Alarm: Hydraulic Pressure Low | — | N/A (software alarm) | Active | See Alarm Reference AEG-AL-700 for thresholds and required actions.",
@@ -76,21 +74,19 @@
       {
         "statement": "Alarm A17's low-pressure condition is evaluated against whichever pressure sensor is active for the installed software revision (PS-04 prior to revision 3.2, PS-04A on revision 3.2 and later).",
         "filename": "ECN-1058.pdf",
-        "location": {
-          "page": 1
-        }
+        "location": "page 1"
       }
     ],
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 0.88,
+    "latency_seconds": 0.87,
     "error": null
   },
   {
     "question_id": "Q4",
     "question": "Is PS-04 the same component as PS-04A?",
-    "system_answer": "No, PS-04 and PS-04A are distinct components; PS-04A is the active pressure sensor used in the installed software revision, while PS-04 is an alternative sensor.",
+    "system_answer": "No, PS-04 and PS-04A are not the same component; they are distinct pressure sensors used in different signal loops.",
     "evidence": [
       {
         "statement": "the condition is evaluated against whichever pressure sensor is active for the installed software revision (PS-04 or PS-04A)",
@@ -98,25 +94,26 @@
         "location": "page 1"
       },
       {
-        "statement": "Operator Manual AEG-OM-700, Maintenance Manual AEG-MM-700, and Component Register AEG-CR-700 have been updated to reflect PS-04A and the 200 bar setpoint.",
-        "filename": "ECN-1042.pdf",
-        "location": "page 1"
-      },
-      {
-        "statement": "This legacy export does not reflect ECN-1042 (PS-04 to PS-04A sensor change and pressure setpoint update to 200 bar, effective software revision 3.2)",
-        "filename": "legacy_manual_v1.html",
-        "location": "element 19, tag p"
-      },
-      {
-        "statement": "PS-04A | Pressure Sensor 04A | P04A; PS04A | HPU discharge line | Active",
+        "statement": "TB-7 | Terminal Block 7 | — | Control Cabinet 1 | Active | Wiring reference only, used in AEG-DWG-W03; corresponds to the PS-04A signal loop.",
         "filename": "component_register.xlsx",
-        "location": "sheet Components, row 5"
+        "location": {
+          "sheet": "Components",
+          "row": 11
+        }
+      },
+      {
+        "statement": "PS-04A | Pressure Sensor 04A | P04A; PS04A | HPU discharge line",
+        "filename": "component_register.xlsx",
+        "location": {
+          "sheet": "Components",
+          "row": 5
+        }
       }
     ],
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 9.0,
+    "latency_seconds": 9.26,
     "error": null
   },
   {
@@ -138,28 +135,40 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 19.99,
+    "latency_seconds": 16.01,
     "error": null
   },
   {
     "question_id": "Q6",
     "question": "Which components connect directly to the HCS controller, according to the hydraulic schematic?",
-    "system_answer": "",
-    "evidence": [],
-    "conflicts": [],
-    "uncertainty": [],
-    "gaps": [
+    "system_answer": "The HCS controller (PLC‑03) connects directly to the following components: IV‑21, PS‑04A, and HPU.",
+    "evidence": [
       {
-        "issue": "No retrieved evidence describes the hydraulic schematic or lists components that connect directly to the HCS controller."
+        "statement": "Hydraulic schematic shows PLC‑03 (HCS Controller) connected directly to IV‑21.",
+        "filename": "system_diagram_hydraulic.pdf",
+        "location": "page 1"
+      },
+      {
+        "statement": "Hydraulic schematic shows PLC‑03 (HCS Controller) connected directly to PS‑04A.",
+        "filename": "system_diagram_hydraulic.pdf",
+        "location": "page 1"
+      },
+      {
+        "statement": "Hydraulic schematic shows PLC‑03 (HCS Controller) connected directly to HPU.",
+        "filename": "system_diagram_hydraulic.pdf",
+        "location": "page 1"
       }
     ],
-    "latency_seconds": 15.66,
+    "conflicts": [],
+    "uncertainty": [],
+    "gaps": [],
+    "latency_seconds": 16.44,
     "error": null
   },
   {
     "question_id": "Q7",
     "question": "What action is required if alarm A17 persists for more than 10 seconds?",
-    "system_answer": "If Alarm A17 persists for more than 10 seconds, the required action is to execute Shutdown Procedure 4.7, which includes closing IV‑21, confirming pressure decay, setting the POWER selector to OFF, tagging out per the site lockout/tagout procedure, and then proceeding to Section 6 (Troubleshooting).",
+    "system_answer": "If Alarm A17 persists for more than 10 seconds, the operator must execute Shutdown Procedure 4.7, which requires closing IV‑21, confirming pressure decay, setting the POWER selector to OFF, tagging out per the site lockout/tagout procedure, and then proceeding to Section 6 (Troubleshooting). The alarm should not be silenced alone.",
     "evidence": [
       {
         "statement": "If persistent > 10 s, run Shutdown Proc. 4.7",
@@ -176,6 +185,20 @@
         }
       },
       {
+        "statement": "Do not attempt to clear a persistent A17 by silencing the alarm alone.",
+        "filename": "maintenance_manual.pdf",
+        "location": {
+          "page": 1
+        }
+      },
+      {
+        "statement": "Shutdown Procedure 4.7 applies only when A17 persists beyond 10 seconds.",
+        "filename": "alarm_reference.pdf",
+        "location": {
+          "page": 1
+        }
+      },
+      {
         "statement": "If alarm A17 persists for more than 10 seconds, execute Shutdown Procedure 4.7 before investigating further.",
         "filename": "maintenance_manual.pdf",
         "location": {
@@ -186,7 +209,7 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 16.35,
+    "latency_seconds": 17.26,
     "error": null
   },
   {
@@ -203,18 +226,23 @@
         "statement": "Controller reset is only permitted when pressure, as reported by the active pressure sensor (PS-04 on revisions prior to 3.2, PS-04A on revision 3.2 and later), reads below 50 bar.",
         "filename": "maintenance_manual.pdf",
         "location": "page 1"
+      },
+      {
+        "statement": "Bleed pressure below 50 bar first, using the manual bleed procedure in Section 8, before performing a controller reset.",
+        "filename": "operator_manual.pdf",
+        "location": "page 2"
       }
     ],
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 16.88,
+    "latency_seconds": 13.27,
     "error": null
   },
   {
     "question_id": "Q9",
     "question": "What was the operating pressure threshold before software revision 3.2, and what changed it?",
-    "system_answer": "Before software revision 3.2 the normal HPU discharge pressure setpoint (operating pressure threshold) was 180 bar. It was changed to 200 bar by software revision 3.2, which also replaced pressure sensor PS‑04 with PS‑04A at the HPU discharge line.",
+    "system_answer": "Before software revision 3.2 the normal HPU discharge pressure setpoint (operating pressure threshold) was 180 bar. It was changed to 200 bar by software revision 3.2, which also replaced pressure sensor PS‑04 with PS‑04A at the HPU discharge line.",
     "evidence": [
       {
         "statement": "Alongside the sensor change, the normal HPU discharge pressure setpoint is revised from 180 bar to 200 bar.",
@@ -229,12 +257,19 @@
         "location": {
           "page": 1
         }
+      },
+      {
+        "statement": "Normal HPU discharge pressure is 200 bar on software revision 3.2 and later.",
+        "filename": "operator_manual.pdf",
+        "location": {
+          "page": 1
+        }
       }
     ],
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 17.04,
+    "latency_seconds": 18.1,
     "error": null
   },
   {
@@ -256,29 +291,24 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 17.46,
+    "latency_seconds": 16.79,
     "error": null
   },
   {
     "question_id": "Q11",
     "question": "According to the component register, what is the location of the isolation valve IV-21?",
-    "system_answer": "",
+    "system_answer": "Hydraulic Module",
     "evidence": [
       {
-        "statement": "IV-21 is listed in the component register.",
+        "statement": "IV-21 | Isolation Valve 21 | Isolation Valve; IV21 | Hydraulic Module | Active | Must be OPEN prior to HPU startup.",
         "filename": "component_register.xlsx",
-        "location": {
-          "sheet": "Components",
-          "row": 3
-        }
+        "location": "sheet: Components, row: 3"
       }
     ],
     "conflicts": [],
     "uncertainty": [],
-    "gaps": [
-      "The component register does not provide a specific physical location for isolation valve IV-21."
-    ],
-    "latency_seconds": 13.18,
+    "gaps": [],
+    "latency_seconds": 13.86,
     "error": null
   },
   {
@@ -298,28 +328,35 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 15.99,
+    "latency_seconds": 1.8,
     "error": null
   },
   {
     "question_id": "Q13",
     "question": "What sensor ID appears on the diagnostics screenshot, and does it match a known component?",
-    "system_answer": "",
-    "evidence": [],
-    "conflicts": [],
-    "uncertainty": [],
-    "gaps": [
+    "system_answer": "The diagnostics screenshot displays the sensor ID \"P.S.04-A\", which matches the known component PS-04A.",
+    "evidence": [
       {
-        "issue": "No evidence provided regarding the sensor ID displayed on the diagnostics screenshot or its correspondence to a known component."
+        "statement": "\"The diagnostics screen displays the sensor tag as P.S.04-A. This corresponds to the known component PS-04A.\"",
+        "filename": "screen_03_diagnostics.png",
+        "location": "file: screen_03_diagnostics.png"
+      },
+      {
+        "statement": "\"Tag P.S.04-A. Note: this screen displays the sensor tag as printed on the physical unit label.\"",
+        "filename": "screen_03_diagnostics.png",
+        "location": "file: screen_03_diagnostics.png"
       }
     ],
-    "latency_seconds": 13.89,
+    "conflicts": [],
+    "uncertainty": [],
+    "gaps": [],
+    "latency_seconds": 14.95,
     "error": null
   },
   {
     "question_id": "Q14",
     "question": "Per the revision history, when did software revision 3.2 take effect, and what changed alongside it?",
-    "system_answer": "Software revision 3.2 became effective with the changes documented in ECN‑1042, which updated the HPU discharge pressure setpoint from 180 bar to 200 bar and introduced the PS‑04A pressure sensor. The revision also caused Alarm A17 to evaluate low‑pressure conditions against the active sensor for the installed software revision (PS‑04 prior to 3.2, PS‑04A on 3.2 and later).",
+    "system_answer": "Software revision 3.2 took effect at the time of the ECN‑1042 change, which updated the system to use the PS‑04A pressure sensor and raised the normal HPU discharge pressure setpoint from 180 bar to 200 bar.",
     "evidence": [
       {
         "statement": "Alongside the sensor change, the normal HPU discharge pressure setpoint is revised from 180 bar to 200 bar.",
@@ -330,35 +367,28 @@
         "statement": "This legacy export does not reflect ECN-1042 (PS-04 to PS-04A sensor change and pressure setpoint update to 200 bar, effective software revision 3.2)",
         "filename": "legacy_manual_v1.html",
         "location": "element 19, tag p"
-      },
-      {
-        "statement": "Alarm A17's low-pressure condition is evaluated against whichever pressure sensor is active for the installed software revision (PS-04 prior to revision 3.2, PS-04A on revision 3.2 and later).",
-        "filename": "ECN-1058.pdf",
-        "location": "page 1"
       }
     ],
     "conflicts": [],
     "uncertainty": [
-      "The exact date or version number when software revision 3.2 took effect is not provided in the retrieved evidence."
+      "The exact date of the software revision 3.2 effect is not provided in the retrieved evidence."
     ],
-    "gaps": [
-      "No explicit revision history entry indicating the date of effect for software revision 3.2."
-    ],
-    "latency_seconds": 16.25,
+    "gaps": [],
+    "latency_seconds": 16.89,
     "error": null
   },
   {
     "question_id": "Q15",
     "question": "What does sensor_ps04a_threshold_bar in the configuration export correspond to in the operator manual's terminology?",
-    "system_answer": "It corresponds to the discharge pressure measured by the PS‑04 sensor.",
+    "system_answer": "The sensor_ps04a_threshold_bar value corresponds to the discharge pressure as described in the operator manual.",
     "evidence": [
       {
-        "statement": "On revisions prior to 3.2, normal discharge pressure was 180 bar, measured by the original PS‑04 sensor.",
+        "statement": "On revisions prior to 3.2, normal discharge pressure was 180 bar, measured by the original PS-04 sensor.",
         "filename": "operator_manual.pdf",
         "location": "page 1"
       },
       {
-        "statement": "discharge pressure measured by the original PS‑04 sensor.",
+        "statement": "measured by the original PS-04 sensor.",
         "filename": "operator_manual.pdf",
         "location": "page 1"
       }
@@ -366,7 +396,7 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 17.98,
+    "latency_seconds": 14.26,
     "error": null
   },
   {
@@ -380,30 +410,23 @@
         "location": "page 1"
       },
       {
-        "statement": "Verify discharge pressure, as reported by PS-04A, reaches 200 bar.",
-        "filename": "operator_manual.pdf",
-        "location": "page 1"
-      },
-      {
-        "statement": "Normal HPU discharge pressure is 200 bar on software revision 3.2 and later.",
-        "filename": "operator_manual.pdf",
-        "location": "page 1"
-      },
-      {
-        "statement": "Alongside the sensor change, the normal HPU discharge pressure setpoint is revised from 180 bar to 200 bar.",
+        "statement": "Normal HPU discharge pressure setpoint is revised from 180 bar to 200 bar.",
         "filename": "ECN-1042.pdf",
         "location": "page 1"
       },
       {
         "statement": "Normal HPU discharge pressure setpoint changed from 180 bar to 200 bar.",
         "filename": "revision_history.xlsx",
-        "location": "sheet: Revision History, row: 4"
+        "location": {
+          "sheet": "Revision History",
+          "row": 4
+        }
       }
     ],
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 18.12,
+    "latency_seconds": 14.96,
     "error": null
   },
   {
@@ -430,7 +453,7 @@
     "gaps": [
       "No evidence referencing PS-40 or indicating equivalence between PS-04 and PS-40."
     ],
-    "latency_seconds": 17.91,
+    "latency_seconds": 18.03,
     "error": null
   },
   {
@@ -452,7 +475,7 @@
     "conflicts": [],
     "uncertainty": [],
     "gaps": [],
-    "latency_seconds": 17.81,
+    "latency_seconds": 17.88,
     "error": null
   },
   {
@@ -467,7 +490,7 @@
     "gaps": [
       "Information regarding the maximum continuous operating temperature of PS-04A is not present in the retrieved documents."
     ],
-    "latency_seconds": 15.72,
+    "latency_seconds": 13.63,
     "error": null
   },
   {
@@ -483,7 +506,7 @@
         "reason": "No retrieved evidence addresses the calibration interval for a voltage sensor in the electrical system diagram."
       }
     ],
-    "latency_seconds": 15.7,
+    "latency_seconds": 12.86,
     "error": null
   },
   {
@@ -495,10 +518,11 @@
     "uncertainty": [],
     "gaps": [
       {
-        "issue": "No retrieved evidence indicates the individual or authority who approved engineering bulletin ECN-1058."
+        "question": "Who approved engineering bulletin ECN-1058?",
+        "reason": "No retrieved evidence contains information about the approver of ECN-1058."
       }
     ],
-    "latency_seconds": 13.74,
+    "latency_seconds": 12.97,
     "error": null
   },
   {
@@ -510,12 +534,12 @@
     "uncertainty": [],
     "gaps": [
       {
-        "statement": "No evidence regarding MTBF for IV-21 was found in the retrieved documents.",
+        "statement": "No evidence of MTBF for IV-21 was found in the retrieved documents.",
         "filename": "",
         "location": ""
       }
     ],
-    "latency_seconds": 14.86,
+    "latency_seconds": 14.54,
     "error": null
   },
   {
@@ -532,7 +556,7 @@
         "location": ""
       }
     ],
-    "latency_seconds": 13.8,
+    "latency_seconds": 12.73,
     "error": null
   }
 ]

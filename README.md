@@ -134,6 +134,7 @@ Aegis-Knowledge-Ingestion/
 ├── llm/
 │   └── model.py
 │
+│
 ├── src/
 │   │
 │   ├── ingest/
@@ -152,6 +153,12 @@ Aegis-Knowledge-Ingestion/
 │   │
 │   ├── retrieval/
 │   │   └── retriever.py
+│   │
+│   ├── validation/
+│   │   ├── validate_content.py
+│   │   ├── validate_documents.py
+│   │   ├── validate_provenance.py
+│   │   └── validate_sturcture.py
 │   │
 │   └── answering/
 │       └── answer_question.py
