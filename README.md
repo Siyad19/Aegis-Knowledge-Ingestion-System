@@ -57,7 +57,6 @@ The system extracts:
 * **Claims** – factual information such as pressure values.
 * **Requirements** – things that must be done or checked.
 * **Relationships** – connections between components.
-* **Warnings** – restrictions and safety-related information.
 
 ### 3. Provenance
 
@@ -80,7 +79,6 @@ When a question is asked, the system searches the knowledge base using a combina
 * Keyword search
 * Exact matching
 * Vector similarity
-* Query intent
 
 The retrieval layer also gives more importance to requirements or warnings when the question is asking about something that **must** or **must not** be done.
 
